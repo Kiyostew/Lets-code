@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Form essential notes" />
+    <title>Form practice</title>
+  </head>
+
+  <body>
+    <form method="GET">
+      <div>
+        <div>
+            <label>
+                Email 
+                <input type="email" name="email" required />
+            </label>
+          </div>
+
+      <div>
+        <label>
+          Password 
+          <input type="password" name="password" required
+          minlength="8" maxlength="15"/>
+        </label>
+      </div>
+
+      <div>
+        <label>
+           Number
+            <input type="number" name="number" required />
+        </label>
+      </div>
+
+      <div>
+        <label>
+            Date
+            <input type="date" name="date" required />
+        </label>
+      </div>
+      
+
+
+      <!--This is another way to add label-->
+      <div>
+        <input type="range" id="volume" name="volume" min="0" max="20" >
+        <label for="volume">Volume</label>
+      </div>
+
+      <fieldset>
+        <legend>Favorite animal </legend>
+        <input type="radio" id="cat" name="fav-animal" value="cat" >
+        <label for="cat"> Cat </label> <br>
+
+        <input type="radio" id="dog" name="fav-animal" value="dog">
+        <label for="dog">Dog</label> <br>
+
+        <input type="radio" id="bird" name="fav-animal" value="bird">
+        <label for="bird">Bird</label>
+
+      </fieldset>
+
+      <label for="fruits">Choose your favorite fruit: </label>
+      <select name="fruits" id="fruits" required>
+        <option value="banana">Banana</option>
+        <option value="apple">Apple</option>
+        <option value="orange">Orange</option>
+        <option value="strawberry">Strawberry</option> 
+      </select> 
+
+      <label for="reviews"> Review of fruits</label>
+      <textarea id="reviews" name="reviews" rows="4" cols="50">
+    write some text here..
+
+      </textarea>
+
+      <div>
+        <input type="submit"/>
+      </div>
+
+      
+    </form>
+  </body>
+</html>
